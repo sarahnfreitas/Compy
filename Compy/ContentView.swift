@@ -9,13 +9,33 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ZStack {
+            VStack(spacing: 20) {
+                Image(.compyLogo)
+                    .imageScale(.large)
+                Button(action: {}, label: {
+                    Text("Iniciar")
+                        .font(.system(size: 20, weight: .bold))
+                        .foregroundStyle(.fundoMonitor)
+                })
+                .padding(.horizontal, 30)
+                .padding(.vertical, 10)
+                .background(.tint)
+                .cornerRadius(10)
+            }
+            .padding()
+            
+            HStack {
+                Image(.compyMascote)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 255, height: 155)
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomLeading)
+            .padding()
         }
-        .padding()
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(.fundoEscuro)
     }
 }
 
