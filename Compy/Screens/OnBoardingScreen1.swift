@@ -21,14 +21,7 @@ struct OnBoardingScreen1: View {
                 
                 Spacer()
                 
-                ZStack {
-                    Text("1/9")
-                        .font(.system(size: 12))
-                        .foregroundStyle(.textos)
-                    
-                    NavigationButton(turnTo: "right")
-                        .frame(maxWidth: .infinity, alignment: .trailing)
-                }
+                NavigationButtonContainer(hasTwoButtons: false)
             }
             .padding(50)
         }

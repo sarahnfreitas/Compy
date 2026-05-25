@@ -24,19 +24,7 @@ struct OnBoardingScreen2: View {
                 
                 Spacer()
                 
-                HStack {
-                    NavigationButton(turnTo: "left")
-                    
-                    Spacer()
-                    
-                    Text("1/9")
-                        .font(.system(size: 12))
-                        .foregroundStyle(.textos)
-                    
-                    Spacer()
-                    
-                    NavigationButton(turnTo: "right")
-                }
+                NavigationButtonContainer()
             }
             .padding(50)
         }
