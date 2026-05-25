@@ -12,11 +12,11 @@ struct OnBoardingScreen3: View {
         OnBoardingEnvironment {
             VStack {
                 Text("Este será o seu ambiente:")
-                    .font(.system(size: 32, weight: .bold))
+                    .font(Font.custom("IosevkaCharon-Bold", size: 32))
                     .padding(.bottom, 5)
                 
                 Text("Ele é composto pelo gabinete e pelo monitor")
-                    .font(.system(size: 16, weight: .medium))
+                    .font(Font.custom("IosevkaCharon-Regular",size: 16))
                 
                 Spacer()
                 

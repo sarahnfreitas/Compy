@@ -12,7 +12,7 @@ struct OnBoardingScreen1: View {
         OnBoardingEnvironment(hasCompyMascot: false) {
             VStack {
                 Text("Olá, eu sou o Compy!")
-                    .font(.system(size: 36, weight: .bold))
+                    .font(Font.custom("IosevkaCharon-Bold", size: 36))
                     .foregroundStyle(.textos)
                 
                 Spacer()

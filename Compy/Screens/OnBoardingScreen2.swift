@@ -11,22 +11,29 @@ struct OnBoardingScreen2: View {
     var body: some View {
         OnBoardingEnvironment {
             VStack {
+                
+                Spacer()
+                
                 Text("Vou te ajudar a entender como os principais componentes físicos de um computador funcionam.")
-                    .font(.system(size: 28))
+                    .lineLimit(nil)
+                    .fixedSize(horizontal: false, vertical: true)
+                    .font(Font.custom("IosevkaCharon-Regular",size: 28))
                     .foregroundStyle(.textos)
                     .multilineTextAlignment(.center)
                     .padding(5)
                 
                 Text("Mas antes de começar, vou mostrar como interagir com as nossas peças!")
-                    .font(.system(size: 28))
+                    .font(Font.custom("IosevkaCharon-Regular",size: 28))
                     .foregroundStyle(.textos)
                     .multilineTextAlignment(.center)
+                    .lineLimit(nil)
+                    .fixedSize(horizontal: false, vertical: true)
                 
                 Spacer()
                 
                 NavigationButtonContainer(pageNumber: "2/9")
             }
-            .padding(50)
+            .padding(49)
         }
     }
 }
