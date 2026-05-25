@@ -21,6 +21,7 @@ struct NavigationButton: View {
         .padding(.vertical, 10)
         .background(.tint)
         .cornerRadius(10)
+        .shadow(radius: 4, x: 0, y: 4)
     }
 }
 
