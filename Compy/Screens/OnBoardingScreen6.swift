@@ -15,13 +15,13 @@ struct OnBoardingScreen6: View {
                 Spacer()
                 
                 Text ("Personalize os componentes")
-                    .font(.system(size: 32, weight: .bold))
+                    .font(Font.custom("IosevkaCharon-Bold", size: 32))
                     .foregroundStyle(.textos)
                     .multilineTextAlignment(.center)
                     .padding(5)
                 
                 Text ("Cada componente possui especificações e você poderá alterá-las na barra do exemplo abaixo:")
-                    .font(.system(size: 16,weight: .regular))
+                    .font(Font.custom("IosevkaCharon-Regular",size: 16))
                     .foregroundStyle(.textos)
                     .multilineTextAlignment(.center)
                     .padding(5)
